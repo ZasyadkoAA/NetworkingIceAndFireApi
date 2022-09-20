@@ -13,7 +13,7 @@
 		A9387C3228D8B5DD000674F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9387C3028D8B5DD000674F2 /* Main.storyboard */; };
 		A9387C3428D8B5DE000674F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9387C3328D8B5DE000674F2 /* Assets.xcassets */; };
 		A9387C3728D8B5DE000674F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9387C3528D8B5DE000674F2 /* LaunchScreen.storyboard */; };
-		A9387C4028D8B62C000674F2 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9387C3F28D8B62C000674F2 /* Characters.swift */; };
+		A9387C4028D8B62C000674F2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9387C3F28D8B62C000674F2 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		A9387C3328D8B5DE000674F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9387C3628D8B5DE000674F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9387C3828D8B5DE000674F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9387C3F28D8B62C000674F2 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		A9387C3F28D8B62C000674F2 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 		A9387C3E28D8B5E6000674F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A9387C3F28D8B62C000674F2 /* Characters.swift */,
+				A9387C3F28D8B62C000674F2 /* Character.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9387C2F28D8B5DD000674F2 /* MainViewController.swift in Sources */,
-				A9387C4028D8B62C000674F2 /* Characters.swift in Sources */,
+				A9387C4028D8B62C000674F2 /* Character.swift in Sources */,
 				A9387C2B28D8B5DD000674F2 /* AppDelegate.swift in Sources */,
 				A9387C2D28D8B5DD000674F2 /* SceneDelegate.swift in Sources */,
 			);

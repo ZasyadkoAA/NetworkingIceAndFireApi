@@ -8,20 +8,21 @@
 import UIKit
 
 enum Link: String {
-    case charactersURL = "https://anapioficeandfire.com/api/characters/583"
+    case characterURL = "https://anapioficeandfire.com/api/characters/583"
 }
 
 class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchCharacter()
     }
     
 }
 
 extension MainViewController {
-    private func fetchCharacters() {
-        guard let url = URL(string: Link.charactersURL.rawValue) else { return }
+    private func fetchCharacter() {
+        guard let url = URL(string: Link.characterURL.rawValue) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
@@ -32,7 +33,10 @@ extension MainViewController {
             let jsonDecoder = JSONDecoder()
             
             do {
-                _ = try jsonDecoder.decode(Characters.self, from: data)
+                let character = try jsonDecoder.decode(Character.self, from: data)
+                DispatchQueue.main.async {
+                    print(character)
+                }
             } catch {
                 print(error.localizedDescription)
             }
